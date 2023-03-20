@@ -22,7 +22,7 @@ class Libusrsctp < Formula
   depends_on "cmake" => :build
 
   def install
-    system "cmake", "-S" ".", "-B", "build",
+    system "cmake", "-S", ".", "-B", "build",
                     "-Dsctp_debug=OFF",
                     "-Dsctp_build_shared_lib=ON",
                     *std_cmake_args
